@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { IoIosSunny } from "react-icons/io";
 import { MdOutlineDarkMode } from "react-icons/md";
-import './DarkMode.css';
+
 
 export default function DarkMode() {
     const [darkMode, setDarkMode] = useState(() => {
