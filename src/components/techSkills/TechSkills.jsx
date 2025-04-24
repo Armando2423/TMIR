@@ -7,14 +7,23 @@ import Grafics from '../../styles/animations/grafic/Grafics';
 // language
 import { useLanguage } from '../../configuration/languages/GlobalLanguages';
 
+import { useInView } from "react-intersection-observer";
+
 export default function TechSkills() {
-    const {texts} = useLanguage();
+    const { texts } = useLanguage();
+
+    const { ref, inView } = useInView({
+        triggerOnce: true,
+        threshold: 0.20,
+    });
+
+
     const handleAnimationComplete = () => {
         console.log('All letters have animated!');
     };
 
     return (
-        <section id="tech-skills">
+        <section id="tech-skills" ref={ref} className={`tech-skills-section ${inView ? 'show' : ''}`}>
             <div className="container-tech-skills">
                 <BackgroundWave />
                 <div className="container-txt">

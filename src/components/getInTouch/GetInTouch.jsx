@@ -218,12 +218,3 @@ export default function GetInTouch() {
     );
 };
 
-
-/* 
-Nombre no valido => si continene letras,
-maximo de caracteres => en los input, maximo 40 en inputDescription 100
-No ingresaste lo solicitado =>  le falto llenar el input 
-Tienes que seleccionar como minimo 1 => en RadioBtns
-Ingresa tu {nombre_campo} (y para el radioBtns: selecciona al menos uno) => Si no registraron nada en eñ formulario
-
-*/

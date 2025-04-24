@@ -123,7 +123,10 @@ const translations = {
                 mensage_alert_2: '✅ ¡Gracias, nos pondremos en contacto pronto!',
             },
         }, 
-     
+        made_by: {
+            title: 'Sitio web creado por:',
+            txt: '@Armando Reyes',
+        },
     },
     en: {
         loading: 'Loading...',
@@ -238,6 +241,10 @@ const translations = {
             },
             
         },
+        made_by: {
+            title: 'Website created by:',
+            txt: '@Armando Reyes',
+        }
         
     },
     zh: {
@@ -353,6 +360,10 @@ const translations = {
             },
             
         },
+        made_by: {
+            title: '网站由以下人员创建：',
+            txt: '@Armando Reyes',
+        }
         
     },
 };

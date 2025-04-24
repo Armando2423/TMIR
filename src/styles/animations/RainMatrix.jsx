@@ -8,7 +8,7 @@
 const getThemeColors = () => {
     const styles = getComputedStyle(document.body);
     return {
-        background: styles.getPropertyValue('--bckMatirx').trim(),
+        background: styles.getPropertyValue('--snow').trim(),
         textColor: styles.getPropertyValue('--txt-matrix').trim()
     };
 };

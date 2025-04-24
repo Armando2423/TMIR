@@ -1,11 +1,16 @@
 import React from 'react';
 import './MadeBy.css';
 
+// language
+import { useLanguage } from '../../configuration/languages/GlobalLanguages';
+
 export default function MadeBy() {
+    const {texts} = useLanguage();
+
     return (
         <div className="made-by">
-            <p>Sitio web creado por:</p>
-            <h1>@Armando Reyes</h1>
+            <p>{texts.made_by.title}</p>
+            <h1>{texts.made_by.txt}</h1>
         </div>
     );
 };
