@@ -14,7 +14,7 @@ export default function Button(
                 <button onClick={onClick} type={type} className="button">
                     <span class="liquid"></span>
                     <span class="btn-txt">{text}</span>
-                </button>z
+                </button>
             </div>
         </>
     );

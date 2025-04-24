@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { MdEmojiPeople, MdContactMail } from 'react-icons/md';
 import { FaHandSpock } from "react-icons/fa";
 import { GiMaterialsScience } from "react-icons/gi";
@@ -15,6 +15,22 @@ import {useLanguage} from "../../configuration/languages/GlobalLanguages";
 export default function Navigation() {
     const {texts} = useLanguage();
     const [isOpen, setIsOpen] = useState(false);
+    const navRef = useRef(null);
+
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+            if (navRef.current && !navRef.current.contains(event.target)) {
+                setIsOpen(false);
+            }
+        };
+    
+        document.addEventListener("mousedown", handleClickOutside);
+        return () => {
+            document.removeEventListener("mousedown", handleClickOutside);
+        };
+    }, []);
+    
+
     const menusItem = [
         {
             icon: <MdEmojiPeople />,
@@ -47,7 +63,7 @@ export default function Navigation() {
     return (
         <div className="component-nav">
             <div className="container-Nav">
-                <div className="container-nav-elements">
+                <div ref={navRef}  className="container-nav-elements">
                     <div className="container-btn-nav">
                         <button className={`btn-nav ${isOpen ? 'open' : ''}`}
                             onClick={() => setIsOpen(!isOpen)}>
