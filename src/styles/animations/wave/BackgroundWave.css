@@ -1,0 +1,9 @@
+.background-wave {
+    width: 100%;
+    overflow: hidden;
+}
+
+.wave-path {
+    fill: var(--midnight);
+    transition: fill 0.3s ease-in-out;
+}

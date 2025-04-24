@@ -1,0 +1,85 @@
+@import '../../styles/Theme.css';
+
+.container-WIDN {
+    height: 100vh;
+    width: 100%;
+    background-color: var(--snow);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.linux-main-container {
+    padding: 20px;
+    margin-bottom: 85px;
+
+}
+
+.linux-terminal-container {
+    width: 100%;
+    max-width: 600px;
+}
+
+.linux-terminal-card {
+    background-color: #000;
+    color: #00ff00;
+    border-radius: 8px;
+    font-family: 'JetBrains Mono', monospace;
+    overflow: hidden;
+}
+
+.linux-terminal-header {
+    background-color: #111;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.linux-terminal-title {
+    font-size: 0.95rem;
+}
+
+.linux-terminal-command {
+    padding: 0.5rem 1rem;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.linux-green {
+    color: #27c93f;
+}
+
+.linux-white {
+    color: #ffffff;
+}
+
+.linux-blue {
+    color: #1e90ff;
+}
+
+.linux-echo-line,
+.linux-terminal-footer {
+    padding: 0.5rem 1rem;
+    color: #00ff00;
+    font-weight: bold;
+}
+
+.linux-terminal-text {
+    padding: 0.5rem 1rem;
+    color: #ffffff;
+    line-height: 1.5;
+    white-space: pre-wrap;
+}
+
+.linux-blinking-cursor {
+    display: inline-block;
+    width: 10px;
+    animation: blink 1s step-start infinite;
+    color: #ffffff;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}

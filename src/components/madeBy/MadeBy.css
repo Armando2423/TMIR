@@ -1,0 +1,22 @@
+@import '../../styles/Theme.css';
+
+.made-by {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    padding: 20px;
+    background-color: var(--snow);
+}
+
+.made-by p {
+    font-size: var(--txt-size-min);
+    color: var(--black);
+    margin: 0;
+}
+
+.made-by h1 {
+    font-size: var(--txt-size-min);
+    color: var(--red);
+    margin: 5px 0 0 0;
+}

@@ -1,0 +1,86 @@
+@import '../../styles/Theme.css';
+
+.container {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    background-color: var(--snow);
+    z-index: 0;
+}
+
+h1 {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+
+.matrix-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    color: var(--midnight);
+    font-size: var(--font-size-titule);
+    font-weight: 700;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.div-btn-contact {
+    display: flex;
+    margin-top: 25px;
+    margin: 25px auto 0;
+    align-items: center;
+    justify-content: center;
+}
+
+/* BUTTON */
+
+.shadow__btn {
+    padding: 10px 20px;
+    border: none;
+    font-size: 17px;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 7px;
+    letter-spacing: 4px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.5s;
+    transition-property: box-shadow;
+}
+
+.shadow__btn {
+    background: rgb(255, 0, 0);
+    box-shadow: 0 0 25px rgb(255, 0, 0),
+        0 0 100px rgb(255, 0, 0);
+
+}
+
+.shadow__btn:hover {
+    box-shadow: 0 0 5px rgb(255, 0, 0),
+        0 0 25px rgb(255, 0, 0),
+        0 0 50px rgb(255, 0, 0),
+        0 0 100px rgb(255, 0, 0);
+}
+
+@media (max-width: 480px) {
+    .shadow__btn {
+        padding: 5px 7.5px;
+        font-size: 13.5px;
+    }
+}

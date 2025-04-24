@@ -1,0 +1,106 @@
+@import '../../styles/Theme.css';
+
+.filter-switch {
+    border: 2px solid var( --main-color);
+    border-radius: 30px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    max-width: 400px;
+    background-color: var( --transparent);
+    margin: auto;
+    overflow: hidden;
+}
+
+.filter-switch input {
+    display: none;
+}
+
+.filter-switch label {
+    flex: 1;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    border-radius: 30px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    font-weight: 550;
+    transition: all 0.5s;
+    font-size: var( --main-color);
+}
+
+.filter-switch .background {
+    position: absolute;
+    width: 31%;
+    height: 38px;
+    background-color: var( --main-color);
+    top: 4px;
+    left: 4px;
+    border-radius: 30px;
+    transition: left 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    z-index: 0;
+}
+
+#option1:checked~.background {
+    left: 4px;
+}
+
+#option2:checked~.background {
+    left: 34%;
+}
+
+#option3:checked~.background {
+    left: 68%;
+}
+
+#option1:checked+label[for="option1"],
+#option2:checked+label[for="option2"],
+#option3:checked+label[for="option3"] {
+    color: var(--snow);
+    font-weight: bold;
+}
+
+#option1:not(:checked)+label[for="option1"],
+#option2:not(:checked)+label[for="option2"],
+#option3:not(:checked)+label[for="option3"] {
+    color: var( --main-color);
+}
+
+/* RESPONSIVE DESIGN */
+@media screen and (max-width: 500px) {
+    .filter-switch {
+        height: 45px;
+        max-width: 100%;
+    }
+
+    .filter-switch label {
+        font-size: 16px;
+    }
+
+    .filter-switch .background {
+        height: 34px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .filter-switch {
+        height: 40px;
+    }
+
+    .filter-switch label {
+        font-size: 14px;
+    }
+
+    .filter-switch .background {
+        height: 30px;
+    }
+}
+
+.parent-container {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+}

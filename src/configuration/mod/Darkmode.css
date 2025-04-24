@@ -1,0 +1,69 @@
+@import '../../styles/Theme.css';
+
+.theme-switch-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.theme-switch {
+    position: relative;
+    width: 80px;
+    height: 40px;
+    background-color: var(--snow);
+    border-radius: 20px;
+    border: 3.5px solid var(--blood-orange);
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    transition: 0.4s;
+    gap: 20px;
+}
+
+.theme-switch.dark {
+    background-color: var(--midnight);
+    border: 2.8px solid var(--snow);
+}
+
+.icon {
+    font-size: 20px;
+    z-index: 1;
+    color: #fff;
+}
+
+.icon-light{
+    color: var(--snow);
+}
+
+.icon-dark {
+    color: var(--midnight);
+}
+
+.switch-thumb {
+    position: absolute;
+    top: 1.1px;
+    left: 4px;
+    width: 32px;
+    height: 32px;
+    background-color: var(--blood-orange);
+    border-radius: 50%;
+    transition: left 0.3s;
+}   
+
+.switch-thumb.dark{
+    background-color: var(--snow);
+}
+
+.theme-switch.light .switch-thumb {
+    left: 4px;
+}
+
+.theme-switch.dark .switch-thumb {
+    left: 44px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}

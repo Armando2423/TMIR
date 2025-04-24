@@ -1,0 +1,38 @@
+:root {
+    --black: #000000;
+    --white: #ffffff;
+    --transparent: transparent;
+    /* main colors  */
+    --main-color: #fd2121;
+    --snow: #fffffa;
+    --midnight: #010b0e;
+    --sunray: #ff9b9b;
+    --pigment-red: #730000;
+    --red: red;
+    --blood-orange: #fe0000;
+    --bckMatirx: #eeeeee;
+    --txt-matrix: red;
+    --txt-titule: clamp(2rem, 5vw, 3.5rem);
+    /* icons fonts */
+    --font-loader: clamp(21.5px, 2vw, 25.5px);
+    --font-size-titule: clamp(42.5px, 2vw, 1.5rem);
+    --font-size-icon: clamp(1.2rem, 2vw, 1.7rem);
+    --icon-size: clamp(1.3rem, 2.5vw, 1.7rem);
+    --font--btn: clamp(1rem, 2vw, 1.25rem);
+    --txt-size: clamp(0.95rem, 2vw, 18.5px);
+    --txt-size-min: clamp(13.5px, 2vw, 10.5px);
+    /* color text HOVER */
+
+}
+
+body.dark {
+    --blood-orange: var(--snow);
+    --black: #fffffa;
+    --white: #000000;
+    --midnight: #fffffa;
+    --snow: #070024;
+    --bckMatirx: #070024;
+    --txt-matrix: red; 
+    --red: #ddfa02;
+}
+

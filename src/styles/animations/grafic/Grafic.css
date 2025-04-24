@@ -1,0 +1,10 @@
+@import '../../Theme.css';
+
+.chart-container {
+    width: 100%;
+    padding: 25px;
+    height: 100vh; /* El contenedor ocupa todo el alto disponible */
+    min-height: 50vh; /* El contenedor no será menor al 50% de la pantalla */
+    position: relative;
+    background-color: var(--snow);
+}
