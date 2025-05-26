@@ -48,6 +48,7 @@ const translations = {
                 title: 'Resolución de problemas',
                 skill_txt: 'Competencia para identificar errores, analizarlos con profundidad y proponer soluciones efectivas.',
             },
+         
             skill_5: {
                 title: 'Gestión del tiempo',
                 skill_txt: 'Organización adecuada del tiempo para cumplir objetivos y entregar proyectos puntualmente.',
@@ -62,7 +63,7 @@ const translations = {
         /* COMPONENT WHAT I DO NOW */
         what_i_do_now: {
             title: '¿Qué hago ahora?',
-            txt: 'Actualmente, me estoy estudiando sobre la rama de ciberseguridad, ya que es una de las áreas más importantes en la industria. Estoy interesado en aprender sobre las técnicas y herramientas necesarias para mejorar mi capacidad de análisis y resolución de problemas en el campo de la seguridad de la información.'
+            txt: 'Actualmente, me estoy capacitando sobre la rama de ciberseguridad, ya que es una de las áreas más importantes en la industria. Estoy interesado en aprender sobre las técnicas y herramientas necesarias para mejorar mi capacidad de análisis y resolución de problemas en el campo de la seguridad de la información.'
         },
         /* COMPONENT GET IN TOUCH */
         get_in_touch: {
@@ -181,7 +182,7 @@ const translations = {
         },
         what_i_do_now: {
             title: 'What I Do Now',
-            txt: 'I’m currently studying cybersecurity, as it’s one of the most important fields in the industry. I’m interested in learning the techniques and tools necessary to improve my analytical and problem-solving skills in the field of information security.'
+            txt: 'I am currently training in the field of cybersecurity, as it is one of the most important areas in the industry. I am interested in learning the techniques and tools needed to improve my analytical and problem-solving skills in the field of information security.'
         },
         get_in_touch: {
             title: 'Get in Touch',
@@ -300,7 +301,7 @@ const translations = {
         },
         what_i_do_now: {
             title: '我现在在做什么',
-            txt: '我目前正在学习网络安全领域，因为这是行业中最重要的领域之一。我希望学习必要的技术和工具，以提高我在信息安全领域的分析和解决问题的能力。'
+            txt: '我目前正在接受网络安全领域的培训，因为这是行业中最重要的领域之一。我有兴趣学习提高信息安全领域分析和解决问题能力所需的技术和工具。'
         },
         get_in_touch: {
             title: '联系我',
@@ -383,6 +384,7 @@ export const LanguageProvider = ({ children }) => {
         setTexts(translations[savedLang]);
     }, []);
 
+    
     useEffect(() => {
         setTexts(translations[language]);
         localStorage.setItem('language', language);
