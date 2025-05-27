@@ -92,12 +92,12 @@
     }
 
     .btn-dark-mode {
-        margin-top: auto;
+        margin-top: 12.5px;
         /* También puedes darle padding o centrar el botón si quieres */
     }
 
     .nav-items {
-        margin-top: 75px;
+        margin-top: 55px;
     }
 
     .nav-item {

@@ -5,7 +5,7 @@ import { FaJsSquare, FaGithub } from "react-icons/fa"; // js & github
 import { FaReact } from "react-icons/fa6"; // react
 import { LiaReact } from "react-icons/lia"; // react-native
 import { IoLogoNodejs } from "react-icons/io"; // nodejs
-import { SiMongodb } from "react-icons/si"; // mongodb
+import { SiMongodb, SiTypescript } from "react-icons/si"; // mongodb & typescript
 // language
 import { useLanguage } from "../../../configuration/languages/GlobalLanguages";
 
@@ -31,7 +31,7 @@ ChartJS.register(
 
 
 export default function Grafics() {
-    const {texts} = useLanguage();
+    const { texts } = useLanguage();
     const [desplaceBar, setDesplaceBar] = useState([]);
     const [chartOptions, setChartOptions] = useState({});
 
@@ -42,6 +42,13 @@ export default function Grafics() {
             icon: <FaJsSquare />,
             number: 8.5,
             barColor: '#fffb17',
+        },
+        {
+            id: 2,
+            title: 'TypeScript',
+            icon: <SiTypescript />,
+            number: 8.7,
+            barColor: '#e60026',
         },
         {
             id: 2,
@@ -101,10 +108,10 @@ export default function Grafics() {
 
     useEffect(() => {
         const rootStyles = () => getComputedStyle(document.body);
-    
+
         const updateChartOptions = () => {
             const styles = rootStyles();
-    
+
             const options = {
                 indexAxis: 'y',
                 responsive: true,
@@ -162,23 +169,23 @@ export default function Grafics() {
                     }
                 }
             };
-    
+
             setChartOptions(options);
         };
-    
+
         // Ejecutar al montar
         updateChartOptions();
-    
+
         // Observador para detectar cambio en modo claro/oscuro
         const observer = new MutationObserver(() => {
             updateChartOptions();
         });
-    
+
         observer.observe(document.body, { attributes: true, attributeFilter: ['class'] });
-    
+
         return () => observer.disconnect();
     }, []);
-    
+
 
     const chartData = {
         labels: desplaceBar.map(skill => skill.title),

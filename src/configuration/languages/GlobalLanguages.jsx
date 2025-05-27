@@ -18,6 +18,7 @@ const translations = {
             element_3: 'Habilidades Técnicas',
             element_4: '¿Qué hago ahora?',
             element_5: 'Contáctame',
+            element_6: 'Visualizar CV',
         },
         /* COMPONENT HOME */
         home: {
@@ -27,7 +28,7 @@ const translations = {
         /* COMPONENT ABOUT ME */
         about_me: {
             title: 'Sobre mí',
-            txt: 'Soy un desarrollador enfocado últimamente en el desarrollo web y móvil. Mi principal prioridad es ofrecer un enfoque único y personalizado a los clientes, diseñando soluciones que se adapten a sus necesidades y expectativas.',
+            txt: 'Soy un desarrollador enfocado últimamente en el desarrollo web y móvil. Mi principal prioridad es ofrecer un enfoque único y personalizado a los clientes, diseñando soluciones que se adapten a sus necesidades y expectativas. Con experiencia en React Native, +2  de años.',
         },
         /* COMPONENT SKILLS */
         skills: {
@@ -48,7 +49,7 @@ const translations = {
                 title: 'Resolución de problemas',
                 skill_txt: 'Competencia para identificar errores, analizarlos con profundidad y proponer soluciones efectivas.',
             },
-         
+
             skill_5: {
                 title: 'Gestión del tiempo',
                 skill_txt: 'Organización adecuada del tiempo para cumplir objetivos y entregar proyectos puntualmente.',
@@ -111,7 +112,7 @@ const translations = {
                 email_mensages: {
                     mensage_1: 'Por favor. Ingresa tu email',
                     mensage_2: 'Email no válido',
-    
+
                 },
                 description_mensages: {
                     mensage_1: 'Por favor. Ingresa tu mensaje acerca de tu proyecto',
@@ -123,7 +124,10 @@ const translations = {
                 mensage_alert_1: '❌ Error al enviar el formulario',
                 mensage_alert_2: '✅ ¡Gracias, nos pondremos en contacto pronto!',
             },
-        }, 
+        },
+        download_pdf: {
+            txt: 'Descargar CV',
+        },
         made_by: {
             title: 'Sitio web creado por:',
             txt: '@Armando Reyes',
@@ -143,6 +147,7 @@ const translations = {
             element_3: 'Technical Skills',
             element_4: 'What I Do Now',
             element_5: 'Get in Touch',
+            element_6: 'View Resume',
         },
         home: {
             title: 'Hi, I’m a developer. . .',
@@ -150,7 +155,8 @@ const translations = {
         },
         about_me: {
             title: 'About Me',
-            txt: 'I am a developer currently focused on web and mobile development. My main priority is to provide a unique and personalized approach to clients, designing solutions tailored to their needs and expectations.',
+            txt: "I am a developer currently focused on web and mobile development. My main priority is to offer a unique and personalized approach to clients, designing solutions tailored to their needs and expectations. I have over 2 years of experience in React Native."
+
         },
         skills: {
             title: 'Skills',
@@ -240,13 +246,16 @@ const translations = {
                 mensage_alert_1: '❌ Error sending the form',
                 mensage_alert_2: '✅ Thank you, we will get in touch soon!',
             },
-            
+
+        },
+        download_pdf: {
+            txt: 'Download CV',
         },
         made_by: {
             title: 'Website created by:',
             txt: '@Armando Reyes',
         }
-        
+
     },
     zh: {
         loading: '加载中...',
@@ -262,6 +271,8 @@ const translations = {
             element_3: '技术技能',
             element_4: '我现在在做什么',
             element_5: '联系我',
+            element_6: '查看简历',
+
         },
         home: {
             title: '你好，我是一名开发者. . .',
@@ -269,7 +280,8 @@ const translations = {
         },
         about_me: {
             title: '关于我',
-            txt: '我是一名开发者，目前专注于网页和移动开发。我的主要目标是为客户提供独特且个性化的服务，设计符合其需求和期望的解决方案。',
+            txt: "我是一名专注于网页和移动开发的开发者。我的首要任务是为客户提供独特且个性化的方案，设计符合其需求和期望的解决方案。我拥有超过两年的 React Native 开发经验。"
+
         },
         skills: {
             title: '技能',
@@ -359,13 +371,16 @@ const translations = {
                 mensage_alert_1: '❌ 表单提交失败',
                 mensage_alert_2: '✅ 谢谢！我们会尽快与您联系！',
             },
-            
+
+        },
+        download_pdf: {
+            txt: '下载简历',
         },
         made_by: {
             title: '网站由以下人员创建：',
             txt: '@Armando Reyes',
         }
-        
+
     },
 };
 
@@ -384,7 +399,7 @@ export const LanguageProvider = ({ children }) => {
         setTexts(translations[savedLang]);
     }, []);
 
-    
+
     useEffect(() => {
         setTexts(translations[language]);
         localStorage.setItem('language', language);

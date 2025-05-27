@@ -3,6 +3,7 @@ import { MdEmojiPeople, MdContactMail } from 'react-icons/md';
 import { FaHandSpock } from "react-icons/fa";
 import { GiMaterialsScience } from "react-icons/gi";
 import { LuUserPen } from "react-icons/lu";
+import { PiReadCvLogoFill } from "react-icons/pi";
 
 import DarkMode from '../../configuration/mod/DarkMode'; // activate darkMode
 import Languages from '../../configuration/languages/Languages'; // change language
@@ -10,10 +11,10 @@ import Languages from '../../configuration/languages/Languages'; // change langu
 import './Navigation.css';
 
 // Languages
-import {useLanguage} from "../../configuration/languages/GlobalLanguages";
+import { useLanguage } from "../../configuration/languages/GlobalLanguages";
 
 export default function Navigation() {
-    const {texts} = useLanguage();
+    const { texts } = useLanguage();
     const [isOpen, setIsOpen] = useState(false);
     const navRef = useRef(null);
 
@@ -23,13 +24,13 @@ export default function Navigation() {
                 setIsOpen(false);
             }
         };
-    
+
         document.addEventListener("mousedown", handleClickOutside);
         return () => {
             document.removeEventListener("mousedown", handleClickOutside);
         };
     }, []);
-    
+
 
     const menusItem = [
         {
@@ -57,13 +58,18 @@ export default function Navigation() {
             text: texts.navigation_elements.element_5,
             targetId: "get-in-touch",
         },
+        {
+            icon: <PiReadCvLogoFill />,
+            text: texts.navigation_elements.element_6,
+            targetId: "resume",
+        },
     ];
 
 
     return (
         <div className="component-nav">
             <div className="container-Nav">
-                <div ref={navRef}  className="container-nav-elements">
+                <div ref={navRef} className="container-nav-elements">
                     <div className="container-btn-nav">
                         <button className={`btn-nav ${isOpen ? 'open' : ''}`}
                             onClick={() => setIsOpen(!isOpen)}>

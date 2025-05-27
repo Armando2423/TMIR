@@ -1,5 +1,6 @@
 // App.jsx
 import React, { useState, useEffect } from 'react';
+// sections 
 import Navigation from './components/navigation/Navigation.jsx';
 import SplashScreen from "./components/splashScreen/SplashScreen.jsx";
 import Home from './components/Home/Home.jsx';
@@ -8,6 +9,7 @@ import Skills from './components/skills/Skills.jsx';
 import TechSkills from './components/techSkills/TechSkills.jsx';
 import WhatIDoNow from './components/whatIDoNow/WhatIDoNow.jsx';
 import GetInTouch from './components/getInTouch/GetInTouch.jsx';
+import GetPdf from './components/getPDF/GetPdf.jsx';
 import MadeBy from './components/madeBy/MadeBy.jsx';
 
 // 🔥 MODO OSCURO desde localStorage antes del render
@@ -39,6 +41,7 @@ export default function App() {
           <TechSkills />
           <WhatIDoNow />
           <GetInTouch />
+          <GetPdf />
           <MadeBy />
         </>
       )}
