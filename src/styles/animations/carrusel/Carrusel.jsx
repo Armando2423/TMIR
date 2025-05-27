@@ -3,7 +3,7 @@ import { motion, useMotionValue, useTransform } from "framer-motion";
 // icons
 import { FaBrain, FaTools } from "react-icons/fa";
 import { RiTeamFill } from "react-icons/ri";
-import { MdOutlineError, MdOutlineTimelapse  } from "react-icons/md";
+import { MdOutlineError, MdOutlineTimelapse, MdLanguage } from "react-icons/md";
 
 import { useLanguage } from "../../../configuration/languages/GlobalLanguages";
 
@@ -30,30 +30,36 @@ export default function Carousel({
             title: texts.skills.skill_1.title,
             description: texts.skills.skill_1.skill_txt,
             id: 1,
-            icon: <FaBrain className="carousel-icon" />,
+            icon: <MdLanguage className="carousel-icon" />,
         },
         {
             title: texts.skills.skill_2.title,
             description: texts.skills.skill_2.skill_txt,
             id: 2,
-            icon: <FaTools className="carousel-icon" />,
+            icon: <FaBrain className="carousel-icon" />,
         },
         {
             title: texts.skills.skill_3.title,
             description: texts.skills.skill_3.skill_txt,
             id: 3,
-            icon: <RiTeamFill className="carousel-icon" />,
+            icon: <FaTools className="carousel-icon" />,
         },
         {
             title: texts.skills.skill_4.title,
             description: texts.skills.skill_4.skill_txt,
             id: 4,
+            icon: <RiTeamFill className="carousel-icon" />,
+        },
+        {
+            title: texts.skills.skill_5.title,
+            description: texts.skills.skill_5.skill_txt,
+            id: 5,
             icon: <MdOutlineError className="carousel-icon" />,
         },
         {
-            title:texts.skills.skill_5.title,
-            description: texts.skills.skill_5.skill_txt,
-            id: 5,
+            title: texts.skills.skill_6.title,
+            description: texts.skills.skill_6.skill_txt,
+            id: 6,
             icon: <MdOutlineTimelapse className="carousel-icon" />,
         },
     ];
@@ -133,11 +139,11 @@ export default function Carousel({
     const dragProps = loop
         ? {}
         : {
-              dragConstraints: {
-                  left: -trackItemOffset * (carouselItems.length - 1),
-                  right: 0,
-              },
-          };
+            dragConstraints: {
+                left: -trackItemOffset * (carouselItems.length - 1),
+                right: 0,
+            },
+        };
 
     return (
         <div className="container-main-c">
@@ -203,11 +209,10 @@ export default function Carousel({
                         {(items || DEFAULT_ITEMS).map((_, index) => (
                             <motion.div
                                 key={index}
-                                className={`carousel-indicator ${
-                                    currentIndex % (items?.length || DEFAULT_ITEMS.length) === index
+                                className={`carousel-indicator ${currentIndex % (items?.length || DEFAULT_ITEMS.length) === index
                                         ? "active"
                                         : "inactive"
-                                }`}
+                                    }`}
                                 animate={{
                                     scale:
                                         currentIndex % (items?.length || DEFAULT_ITEMS.length) === index

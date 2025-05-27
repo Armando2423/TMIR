@@ -34,23 +34,27 @@ const translations = {
         skills: {
             title: 'Habilidades',
             skill_1: {
+                title: 'Ingles',
+                skill_txt: 'Capacidad de lectura y comprensión del inglés. Al igual que escritura y dialecto.',
+            },
+            skill_2: {
                 title: 'Pensamiento lógico',
                 skill_txt: 'Capacidad para comprender la lógica de los problemas y buscar soluciones eficientes.',
             },
-            skill_2: {
+            skill_3: {
                 title: 'Adaptabilidad',
                 skill_txt: 'Facilidad para ajustarse a nuevos entornos, herramientas y requisitos del proyecto.',
             },
-            skill_3: {
+            skill_4: {
                 title: 'Comunicación en equipo',
                 skill_txt: 'Habilidad para trabajar de manera colaborativa, comprender ideas y transmitir información claramente.',
             },
-            skill_4: {
+            skill_5: {
                 title: 'Resolución de problemas',
                 skill_txt: 'Competencia para identificar errores, analizarlos con profundidad y proponer soluciones efectivas.',
             },
 
-            skill_5: {
+            skill_6: {
                 title: 'Gestión del tiempo',
                 skill_txt: 'Organización adecuada del tiempo para cumplir objetivos y entregar proyectos puntualmente.',
             },
@@ -161,24 +165,28 @@ const translations = {
         skills: {
             title: 'Skills',
             skill_1: {
-                title: 'Logical Thinking',
-                skill_txt: 'Ability to understand the logic behind problems and find efficient solutions.',
+                title: 'English',
+                skill_txt: 'Ability to read and understand English, as well as writing and speaking skills.',
             },
             skill_2: {
-                title: 'Adaptability',
-                skill_txt: 'Ease in adjusting to new environments, tools, and project requirements.',
+                title: 'Logical Thinking',
+                skill_txt: 'Ability to understand problem logic and seek efficient solutions.',
             },
             skill_3: {
-                title: 'Team Communication',
-                skill_txt: 'Ability to collaborate effectively, understand ideas, and clearly share information.',
+                title: 'Adaptability',
+                skill_txt: 'Ease of adjusting to new environments, tools, and project requirements.',
             },
             skill_4: {
-                title: 'Problem Solving',
-                skill_txt: 'Competence in identifying errors, deeply analyzing them, and proposing effective solutions.',
+                title: 'Team Communication',
+                skill_txt: 'Ability to work collaboratively, understand ideas, and clearly convey information.',
             },
             skill_5: {
+                title: 'Problem Solving',
+                skill_txt: 'Competence in identifying errors, analyzing them deeply, and proposing effective solutions.',
+            },
+            skill_6: {
                 title: 'Time Management',
-                skill_txt: 'Proper time organization to meet goals and deliver projects on time.',
+                skill_txt: 'Proper organization of time to meet goals and deliver projects on time.',
             },
         },
         tech_skills: {
@@ -286,24 +294,28 @@ const translations = {
         skills: {
             title: '技能',
             skill_1: {
-                title: '逻辑思维',
-                skill_txt: '理解问题的逻辑并寻找高效解决方案的能力。',
+                title: '英语',
+                skill_txt: '具备英语阅读和理解能力，以及写作和口语表达能力。',
             },
             skill_2: {
-                title: '适应能力',
-                skill_txt: '能够适应新环境、新工具和项目需求的能力。',
+                title: '逻辑思维',
+                skill_txt: '能够理解问题的逻辑，并寻找高效的解决方案。',
             },
             skill_3: {
-                title: '团队沟通',
-                skill_txt: '能够有效协作、理解想法并清晰传达信息的能力。',
+                title: '适应能力',
+                skill_txt: '能够轻松适应新环境、新工具和项目需求。',
             },
             skill_4: {
-                title: '问题解决',
-                skill_txt: '识别错误、深入分析并提出有效解决方案的能力。',
+                title: '团队沟通',
+                skill_txt: '具备协作能力，能够理解想法并清晰传达信息。',
             },
             skill_5: {
+                title: '问题解决',
+                skill_txt: '具备识别错误、深入分析并提出有效解决方案的能力。',
+            },
+            skill_6: {
                 title: '时间管理',
-                skill_txt: '合理安排时间以实现目标并按时交付项目。',
+                skill_txt: '能够合理安排时间，按时完成目标并交付项目。',
             },
         },
         tech_skills: {
