@@ -135,6 +135,7 @@ const translations = {
         made_by: {
             title: 'Sitio web creado por:',
             txt: '@Armando Reyes',
+            date: 'Publicado el: 24/04/2025'
         },
     },
     en: {
@@ -262,6 +263,7 @@ const translations = {
         made_by: {
             title: 'Website created by:',
             txt: '@Armando Reyes',
+            date: 'Published  on: April 24, 2025'
         }
 
     },
@@ -391,6 +393,7 @@ const translations = {
         made_by: {
             title: '网站由以下人员创建：',
             txt: '@Armando Reyes',
+            date: '2025年4月24日',
         }
 
     },
