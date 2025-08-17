@@ -42,10 +42,17 @@ h1 {
 
 .div-btn-contact {
     display: flex;
+    flex-direction: column;
     margin-top: 25px;
     margin: 25px auto 0;
     align-items: center;
     justify-content: center;
+}
+
+.txt-home {
+    color: var(--midnight);
+    font-size: var(--txt-size);
+    margin-bottom: 50px;
 }
 
 /* BUTTON */

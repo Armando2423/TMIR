@@ -23,6 +23,7 @@ const translations = {
         /* COMPONENT HOME */
         home: {
             title: 'Hola, soy desarrollador de apps móvil y web. . .',
+            txt: 'Cambia el tema (claro ó oscuro) y el idioma (Español, Ingles y Chino) en el menú.',
             btn: 'Contáctame',
         },
         /* COMPONENT ABOUT ME */
@@ -156,6 +157,7 @@ const translations = {
         },
         home: {
             title: 'Hi, I am a mobile and web app developer...',
+            txt: 'Change the theme (light or dark) and the language (Spanish, English, and Chinese) in the menu.',
             btn: 'Get in Touch',
         },
         about_me: {
@@ -286,6 +288,7 @@ const translations = {
         },
         home: {
             title: '你好，我是一名移动端和网页应用开发者...',
+            txt: '在菜单中更改主题（浅色或深色）和语言（西班牙语、英语和中文）。',
             btn: '联系我',
         },
         about_me: {

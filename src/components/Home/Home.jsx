@@ -58,6 +58,7 @@ export default function Home() {
                     animateOn="view" // o "hover"
                 />
                 <div className="div-btn-contact">
+                    <span className="txt-home">{texts.home.txt}</span>
                     <button
                         onClick={() => {
                             const section = document.getElementById('get-in-touch');
