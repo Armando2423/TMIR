@@ -22,7 +22,7 @@ const translations = {
         },
         /* COMPONENT HOME */
         home: {
-            title: 'Hola, soy desarrollador. . .',
+            title: 'Hola, soy desarrollador de apps móvil y web. . .',
             btn: 'Contáctame',
         },
         /* COMPONENT ABOUT ME */
@@ -155,7 +155,7 @@ const translations = {
             element_6: 'View Resume',
         },
         home: {
-            title: 'Hi, I’m a developer. . .',
+            title: 'Hi, I am a mobile and web app developer...',
             btn: 'Get in Touch',
         },
         about_me: {
@@ -285,7 +285,7 @@ const translations = {
 
         },
         home: {
-            title: '你好，我是一名开发者. . .',
+            title: '你好，我是一名移动端和网页应用开发者...',
             btn: '联系我',
         },
         about_me: {
