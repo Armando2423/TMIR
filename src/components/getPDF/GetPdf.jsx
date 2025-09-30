@@ -4,7 +4,7 @@ import { useLanguage } from '../../configuration/languages/GlobalLanguages';
 // PDF CV
 import CVEnglish from "../../pdf/CV_english.pdf";
 import cv_current from "../../pdf/my_cv.pdf"; 
-import cv_upgrade from "../../pdf/Ar_resume.pdf"; // current CV
+import cv_upgrade from "../../pdf/AR_resume.pdf"; // current CV
 
 export default function GetPdf() {
     const { texts } = useLanguage();
