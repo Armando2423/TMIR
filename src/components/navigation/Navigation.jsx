@@ -79,6 +79,9 @@ export default function Navigation() {
                         </button>
                     </div>
                     <div className={`list-elements ${isOpen ? 'open' : ''}`}>
+                        <div className="container-dark-mode">
+                                <DarkMode />
+                        </div>
                         <div className="nav-items">
                             {menusItem.map((item, index) => (
                                 <div key={index}
@@ -100,7 +103,7 @@ export default function Navigation() {
                         </div>
                         <div className="btn-dark-mode">
                             <Languages />
-                            <DarkMode />
+                           
                         </div>
                     </div>
 

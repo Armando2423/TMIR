@@ -1,7 +1,8 @@
     @import '../../styles/Theme.css';
 
     .component-nav {
-        position: fixed; /* o 'fixed' si quieres que se mantenga visible en scroll */
+        position: fixed;
+        /* o 'fixed' si quieres que se mantenga visible en scroll */
         top: 0;
         left: 0;
         z-index: 2000;
@@ -27,10 +28,9 @@
         height: 60px;
         width: 60px;
         z-index: 1100;
-        /* encima de la expansión */
         overflow: hidden;
-        /* evita que el círculo se desborde */
     }
+
 
 
     .btn-nav span {
@@ -40,7 +40,6 @@
         height: 4px;
         width: 30px;
         clip-path: polygon(0 0, 100% 0, 85% 100%, 15% 100%);
-        /* Forma de trapecio */
         transition: 0.45s;
     }
 
@@ -59,12 +58,23 @@
         transform: translate(0px, -6.5px) rotate(-45deg);
     }
 
+    .container-dark-mode {
+        margin: 0 auto;
+        flex: 1;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 10.5px;
+        right: 10.5px;
+
+    }
+
     .list-elements {
         position: absolute;
         top: 0;
         left: 0;
         height: 100vh;
-        width: 275px;
+        width: 300px;
         border-top-right-radius: 25px;
         border-end-end-radius: 25px;
         background-color: var(--snow);
@@ -77,27 +87,23 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        /* Esto empuja DarkMode al fondo */
         padding: 20px;
     }
 
     .list-elements.open {
         transform: translateX(0);
-        /* Se muestra al activar */
     }
 
     .nav-items {
         flex-grow: 1;
-        /* Aquí puedes meter los elementos del menú más adelante */
     }
 
     .btn-dark-mode {
         margin-top: 12.5px;
-        /* También puedes darle padding o centrar el botón si quieres */
     }
 
     .nav-items {
-        margin-top: 55px;
+        margin-top: 45px;
     }
 
     .nav-item {
@@ -107,14 +113,14 @@
         gap: 10px;
         margin-top: 28px;
         cursor: pointer;
-        transition: background 0.2s ease;
+        transition: background 0.4s inherit;
     }
 
     .nav-item:hover {
         background: var(--midnight);
         padding: 7.5px;
         color: var(--snow);
-        border-radius: 20px;
+        border-radius: 25px;
     }
 
     .nav-item:hover .nav-text,

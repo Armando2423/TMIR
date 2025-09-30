@@ -110,7 +110,8 @@ export default function Carousel({
     const effectiveTransition = isResetting ? { duration: 0 } : SPRING_OPTIONS;
 
     const handleAnimationComplete = () => {
-        if (loop && currentIndex === carouselItems.length - 1) {
+        if (!loop) return;
+        if (currentIndex === carouselItems.length - 1) {
             setIsResetting(true);
             x.set(0);
             setCurrentIndex(0);
@@ -122,17 +123,10 @@ export default function Carousel({
         const offset = info.offset.x;
         const velocity = info.velocity.x;
         if (offset < -DRAG_BUFFER || velocity < -VELOCITY_THRESHOLD) {
-            if (loop && currentIndex === carouselItems.length - 1) {
-                setCurrentIndex(currentIndex + 1);
-            } else {
-                setCurrentIndex((prev) => Math.min(prev + 1, carouselItems.length - 1));
-            }
+            setCurrentIndex((prev) => Math.min(prev + 1, carouselItems.length - 1));
+
         } else if (offset > DRAG_BUFFER || velocity > VELOCITY_THRESHOLD) {
-            if (loop && currentIndex === 0) {
-                setCurrentIndex(carouselItems.length - 2);
-            } else {
-                setCurrentIndex((prev) => Math.max(prev - 1, 0));
-            }
+            setCurrentIndex((prev) => Math.max(prev - 1, 0));
         }
     };
 
@@ -210,8 +204,8 @@ export default function Carousel({
                             <motion.div
                                 key={index}
                                 className={`carousel-indicator ${currentIndex % (items?.length || DEFAULT_ITEMS.length) === index
-                                        ? "active"
-                                        : "inactive"
+                                    ? "active"
+                                    : "inactive"
                                     }`}
                                 animate={{
                                     scale:

@@ -33,7 +33,7 @@ export default function Skills() {
                     autoplay={true}
                     autoplayDelay={3000}
                     pauseOnHover={true}
-                    loop={true}
+                    loop={false}
                     round={false}
                 />
                 <div className="container-titule">

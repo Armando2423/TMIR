@@ -1,17 +1,18 @@
 @import '../../styles/Theme.css';
 
 .filter-switch {
-    border: 2px solid var( --main-color);
-    border-radius: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 3fr);
+    grid-template-rows: repeat(2, 50px);
+    gap: 10px;
     position: relative;
-    display: flex;
-    align-items: center;
-    height: 50px;
     width: 100%;
     max-width: 400px;
-    background-color: var( --transparent);
-    margin: auto;
-    overflow: hidden;
+    border: 2px solid var(--main-color);
+    border-radius: 30px;
+    padding: 5px;
+    height: 175px;
+    background-color: var(--transparent);
 }
 
 .filter-switch input {
@@ -28,35 +29,50 @@
     overflow: hidden;
     z-index: 1;
     font-weight: 550;
+    color: var(--main-color);
     transition: all 0.5s;
-    font-size: var( --main-color);
+    font-size: 0.85rem;
 }
 
 .filter-switch .background {
     position: absolute;
-    width: 31%;
-    height: 38px;
-    background-color: var( --main-color);
-    top: 4px;
-    left: 4px;
+    width: calc(33.33% - 10px);
+    height: 50px;
+    background-color: var(--main-color);
     border-radius: 30px;
-    transition: left 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    top: 5px;
+    left: 5px;
+    transition: all 0.3s ease;
     z-index: 0;
 }
 
-#option1:checked~.background {
-    left: 4px;
+#option1:checked~.background { transform: translate(25%, 0%);} /* SPANISH */
+#option2:checked~.background { transform: translate(200%, 0%);}/* ENGLISH */
+#option3:checked~.background { transform: translate(25%, 120%);} /* CHINESE */
+#option4:checked~.background { transform: translate(200%, 120%); } /* FRENCH */
+#option5:checked~.background { transform: translate(25%, 225%); } /* ITALIAN */
+#option6:checked~.background { transform: translate(200%, 225%);} /* GERMAN */
+
+
+.filter-switch input:checked+label {
+    color: var(--snow);
+    font-weight: bold;
 }
 
-#option2:checked~.background {
-    left: 34%;
+.filter-switch label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: color 0.3s;
+    font-weight: 450;
+    color: var(--main-color);
 }
 
-#option3:checked~.background {
-    left: 68%;
-}
 
-#option1:checked+label[for="option1"],
+/* #option1:checked+label[for="option1"],
 #option2:checked+label[for="option2"],
 #option3:checked+label[for="option3"] {
     color: var(--snow);
@@ -68,35 +84,59 @@
 #option3:not(:checked)+label[for="option3"] {
     color: var( --main-color);
 }
-
+ */
 /* RESPONSIVE DESIGN */
 @media screen and (max-width: 500px) {
     .filter-switch {
-        height: 45px;
+    grid-template-columns: repeat(2, 3fr);
+    grid-template-rows: repeat(2, 50px);
+    gap: 5px;
+    position: relative;
+        height: 155px;
         max-width: 100%;
     }
 
     .filter-switch label {
-        font-size: 16px;
+        font-size: 0.85rem;
     }
 
     .filter-switch .background {
         height: 34px;
     }
+    
+#option1:checked~.background { transform: translate(30%, 20%);} /* SPANISH */
+#option2:checked~.background { transform: translate(196%, 20%);}/* ENGLISH */
+#option3:checked~.background { transform: translate(28%, 180%);} /* CHINESE */
+#option4:checked~.background { transform: translate(198%, 180%); } /* FRENCH */
+#option5:checked~.background { transform: translate(30%, 315%); } /* ITALIAN */
+#option6:checked~.background { transform: translate(198%, 315%);} /* GERMAN */
+
 }
 
 @media screen and (max-width: 360px) {
     .filter-switch {
-        height: 40px;
+    grid-template-columns: repeat(2, 3fr);
+    grid-template-rows: repeat(2, 50px);
+    gap: 5px;
+    position: relative;
+        height: 145px;
+        max-width: 100%;
     }
 
     .filter-switch label {
-        font-size: 14px;
+        font-size: 0.85rem;
     }
 
     .filter-switch .background {
         height: 30px;
     }
+#option1:checked~.background { transform: translate(30%, 27%);} /* SPANISH */
+#option2:checked~.background { transform: translate(198%, 27%);}/* ENGLISH */
+#option3:checked~.background { transform: translate(30%, 210%);} /* CHINESE */
+#option4:checked~.background { transform: translate(198%, 210%); } /* FRENCH */
+#option5:checked~.background { transform: translate(30%, 345%); } /* ITALIAN */
+#option6:checked~.background { transform: translate(198%, 345%);} /* GERMAN */
+
 }
 
 .parent-container {

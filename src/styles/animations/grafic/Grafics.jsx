@@ -40,7 +40,7 @@ export default function Grafics() {
             id: 1,
             title: 'Javascript',
             icon: <FaJsSquare />,
-            number: 8.5,
+            number: 8.8,
             barColor: '#fffb17',
         },
         {
@@ -66,25 +66,40 @@ export default function Grafics() {
         },
         {
             id: 4,
+            title: 'Expo',
+            icon: <LiaReact />,
+            number: 9.0,
+            barColor: '#ff0062ff',
+        },
+        {
+            id: 5,
             title: 'MongoDB',
             icon: <SiMongodb />,
             number: 9.0,
             barColor: '#0aee69',
         },
         {
-            id: 5,
+            id: 6,
+            title: 'PostgreSQL',
+            icon: <SiMongodb />,
+            number: 8.5,
+            barColor: '#c60cffff',
+        },
+        {
+            id: 7,
             title: 'Nodejs',
             icon: <IoLogoNodejs />,
-            number: 7.1,
+            number: 8.1,
             barColor: '#3ff127',
         },
         {
-            id: 6,
+            id: 8,
             title: 'GitHub',
             icon: <FaGithub />,
             number: 8.1,
             barColor: '#474747',
-        }
+        },
+
     ];
 
     useEffect(() => {
@@ -148,8 +163,8 @@ export default function Grafics() {
                         grid: {
                             color: styles.getPropertyValue('--black').trim(),
                             borderColor: styles.getPropertyValue('--black').trim(),
-                            borderWidth: 2,
-                            lineWidth: 1,
+                            borderWidth: 2.5,
+                            lineWidth: 1.5,
                         }
                     },
                     x: {
@@ -163,8 +178,8 @@ export default function Grafics() {
                         grid: {
                             color: styles.getPropertyValue('--black').trim(),
                             borderColor: styles.getPropertyValue('--black').trim(),
-                            borderWidth: 2,
-                            lineWidth: 1,
+                            borderWidth: 2.5,
+                            lineWidth: 1.5,
                         }
                     }
                 }
@@ -194,7 +209,7 @@ export default function Grafics() {
                 label: texts.tech_skills.label,
                 data: desplaceBar.map(skill => skill.number),
                 backgroundColor: desplaceBar.map(skill => skill.barColor),
-                borderRadius: 25,
+                borderRadius: 50,
             }
         ]
     };
