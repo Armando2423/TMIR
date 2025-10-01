@@ -62,6 +62,10 @@ const translations = {
                 title: 'Gestión del tiempo',
                 skill_txt: 'Organización adecuada del tiempo para cumplir objetivos y entregar proyectos puntualmente.',
             },
+            skill_7: {
+                title: 'Inteligencia Emocional',
+                skill_txt: 'Capacidad para reconocer y gestionar mis emociones, manteniendo autocontrol frente a las dificultades.'
+            }
         },
         /* COMPONENT TECH SKILLS */
         tech_skills: {
@@ -198,6 +202,10 @@ const translations = {
                 title: 'Time Management',
                 skill_txt: 'Proper organization of time to meet goals and deliver projects on time.',
             },
+            skill_7: {
+                title: 'Emotional Intelligence',
+                skill_txt: 'Ability to recognize and manage emotions, maintaining autonomy in the face of challenges.'
+            }
         },
         tech_skills: {
             title: 'Technical Skills',
@@ -333,6 +341,10 @@ const translations = {
                 title: '时间管理',
                 skill_txt: '能够合理安排时间，按时完成目标并交付项目。',
             },
+            skill_7: {
+                title: '情商',
+                skill_txt: '能够识别和管理自己的情绪，并在面对困难时保持自我控制的能力。'
+            }
         },
         tech_skills: {
             title: '技术技能',
@@ -466,6 +478,10 @@ const translations = {
                 title: 'Gestion du temps',
                 skill_txt: 'Organisation efficace du temps pour atteindre les objectifs et livrer les projets à temps.',
             },
+            skill_7: {
+                title: 'Intelligence Émotionnelle',
+                skill_txt: 'Capacité à reconnaître et à gérer mes émotions, en maintenant le contrôle de soi face aux difficultés.'
+            }
         },
         tech_skills: {
             title: 'Compétences Techniques',
@@ -556,7 +572,7 @@ const translations = {
         },
         navigation_elements: {
             element_1: 'Chi sono',
-            element_2:  'Competenze trasversali',
+            element_2: 'Competenze trasversali',
             element_3: 'Competenze Tecniche',
             element_4: 'Cosa faccio ora?',
             element_5: 'Contattami',
@@ -597,6 +613,10 @@ const translations = {
                 title: 'Gestione del tempo',
                 skill_txt: 'Organizzazione del tempo per raggiungere obiettivi e consegnare progetti puntualmente.',
             },
+            skill_7: {
+                title: 'Intelligenza Emotiva',
+                skill_txt: 'Capacità di riconoscere e gestire le mie emozioni, mantenendo l’autocontrollo di fronte alle difficoltà.'
+            }
         },
         tech_skills: {
             title: 'Competenze Tecniche',
@@ -687,7 +707,7 @@ const translations = {
         },
         navigation_elements: {
             element_1: 'Über mich',
-            element_2:  'Soziale Kompetenzen',
+            element_2: 'Soziale Kompetenzen',
             element_3: 'Technische Fähigkeiten',
             element_4: 'Was mache ich jetzt?',
             element_5: 'Kontaktiere mich',
@@ -728,6 +748,10 @@ const translations = {
                 title: 'Zeitmanagement',
                 skill_txt: 'Effektive Organisation der Zeit, um Ziele zu erreichen und Projekte rechtzeitig zu liefern.',
             },
+            skill_7: {
+                title: 'Emotionale Intelligenz',
+                skill_txt: 'Fähigkeit, meine Emotionen zu erkennen und zu steuern, wobei ich auch in schwierigen Situationen die Selbstkontrolle bewahre.'
+            }
         },
         tech_skills: {
             title: 'Technische Fähigkeiten',

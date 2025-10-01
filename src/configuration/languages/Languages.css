@@ -28,7 +28,7 @@
     position: relative;
     overflow: hidden;
     z-index: 1;
-    font-weight: 550;
+    font-weight: 700;
     color: var(--main-color);
     transition: all 0.5s;
     font-size: 0.85rem;

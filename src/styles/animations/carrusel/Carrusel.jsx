@@ -2,7 +2,7 @@ import { useEffect, useState, useRef } from "react";
 import { motion, useMotionValue, useTransform } from "framer-motion";
 // icons
 import { FaBrain, FaTools } from "react-icons/fa";
-import { RiTeamFill } from "react-icons/ri";
+import { RiTeamFill, RiEmotionLaughFill  } from "react-icons/ri";
 import { MdOutlineError, MdOutlineTimelapse, MdLanguage } from "react-icons/md";
 
 import { useLanguage } from "../../../configuration/languages/GlobalLanguages";
@@ -61,6 +61,12 @@ export default function Carousel({
             description: texts.skills.skill_6.skill_txt,
             id: 6,
             icon: <MdOutlineTimelapse className="carousel-icon" />,
+        },
+        {
+            title: texts.skills.skill_7.title,
+            description: texts.skills.skill_7.skill_txt,
+            id: 7,
+            icon: <RiEmotionLaughFill className="carousel-icon" />,
         },
     ];
 
