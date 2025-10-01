@@ -813,11 +813,11 @@ const translations = {
 export const LanguageContext = createContext();
 
 export const LanguageProvider = ({ children }) => {
-    const [language, setLanguage] = useState('es');
-    const [texts, setTexts] = useState(translations['es']);
+    const [language, setLanguage] = useState('en');
+    const [texts, setTexts] = useState(translations['en']);
 
     useEffect(() => {
-        const savedLang = localStorage.getItem('language') || 'es';
+        const savedLang = localStorage.getItem('language') || 'en';
         setLanguage(savedLang);
         setTexts(translations[savedLang]);
     }, []);
